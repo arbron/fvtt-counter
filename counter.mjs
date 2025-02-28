@@ -62,7 +62,8 @@ function _modifyCount(type, id, img, delta) {
 
 /***************************************************************/
 
-Hooks.on("renderFilePicker", (application, [html], context) => {
+Hooks.on("renderFilePicker", (application, element, context) => {
+	const html = element instanceof HTMLElement ? element : element[0];
 	const pack = game.packs.get(application.options.document?.pack);
 	if ( !pack ) return;
 	for ( const img of html.querySelectorAll(".file[data-path]") ) {

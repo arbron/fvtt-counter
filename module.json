@@ -15,10 +15,10 @@
 	"url": "https://github.com/arbron/fvtt-counter",
 	"manifest": "",
 	"download": "",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"compatibility": {
 		"minimum": "12.298",
-		"verified": "12"
+		"verified": "13"
 	},
 	"esmodules": [
 		"./counter.mjs"
@@ -33,8 +33,9 @@
 			"path": "lang/en.json"
 		}
 	],
-	"includes": [
-		"LICENSE"
-	],
-	"flags": {}
+	"flags": {
+		"includes": [
+			"LICENSE"
+		]
+	}
 }

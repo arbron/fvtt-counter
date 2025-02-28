@@ -1,7 +1,7 @@
-.filepicker {
+.filepicker, .file-picker {
 	.file:has(> .arbron-counts) {
 		position: relative;
-	
+
 		.arbron-counts {
 			position: absolute;
 			inset-block-end: 0;
